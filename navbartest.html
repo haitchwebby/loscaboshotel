@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* Sticky nav bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.1); /* Transparent white */
+      backdrop-filter: blur(10px); /* Optional glass effect */
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .content {
+      padding: 100vh 2rem;
+      background: linear-gradient(#a18cd1, #fbc2eb); /* For testing scroll */
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">ROOMS</a>
+    <a href="#">BOOK NOW!</a>
+    <a href="#">ABOUT US</a>
+  </div>
+
+  <div class="content">
+    <p>Scroll down to test the sticky navbar. It should stay visible at the top and not block the rest of the content.</p>
+  </div>
+
+        <div id="support-chat">
+  <button onclick="toggleChat()">💬 Chat with us</button>
+  <div id="chat-box" style="display: none;">
+    <h4>Customer Support</h4>
+    <p>Hi! How can we help you?</p>
+    <textarea placeholder="Type your message..."></textarea>
+    <button>Send</button>
+  </div>
+</div>
+
+
+</body>
+</html>

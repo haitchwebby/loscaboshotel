@@ -3112,3 +3112,11 @@ input, select, textarea {
   to { opacity: 1; transform: scale(1); }
 }
 
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-height: 350px; /* optional: limit height on larger screens */
+  object-fit: cover; /* optional: crop instead of stretching */
+  display: block;
+}
+
